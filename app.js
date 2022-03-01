@@ -129,6 +129,6 @@ app.get("/drinks", (req, res) => {
     Drinks: Drinks,
   });
 });
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log("Aplikasi ini running diport:", port);
 });
